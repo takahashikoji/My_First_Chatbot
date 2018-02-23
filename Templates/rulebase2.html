@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>AImanachan_rulebase3</title>
+
+    <link rel="stylesheet" href="https://getbootstrap.com/dist/css/bootstrap.min.css">
+    <link href="https://getbootstrap.com/docs/4.0/examples/narrow-jumbotron/narrow-jumbotron.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills float-right">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Map</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <h3 class="text-muted"><font color="pink">AImanachan</font></h3>
+      </div>
+
+      <div class="jumbotron">
+        <h2>Phrases you searched for</h2>
+        <h5>{{passlog}}</h5><br/>
+        <p class="lead"><h4>{{manachan_return['relation_word']}}</h4></p>
+        <p class="lead"><h4>{{manachan_return['conti']}}</h4></p>
+        <p class="lead"><h3>Enter the words you want to examine!!</h3></p>
+        <!-- <p class="lead">まずは重要語句から調べていくといいかも！</p> -->
+        <!-- <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p> -->
+          <form method="POST" action="/study" class="btn btn-lg btn-success">
+            <!-- あなたが検索した語句<br/> -->
+              <!-- <br/> -->
+              {{ form.user() }}<input type="submit" value="send"/><br/>
+          </form>
+        </div>
+
+      <div class="row marketing">
+        <div class="col-lg-6">
+          <h5>{{manachan_return['database_word']}}</h5>
+          <p><a href={{manachan_return['URL1']}} target="_blank">{{manachan_return['URL1']}}</a></p>
+          <p><a href={{manachan_return['URL2']}} target="_blank">{{manachan_return['URL2']}}</a></p>
+          <!-- <br/> -->
+          <h5>Manachan memo!!</h5>
+          <h6>{{manachan_return['description']}}<h6>
+            <br/>
+            <h5>Important phrase</h5>
+            <div class="btn-group">
+								<button type="button" class="btn btn-success btn-filter" data-target="人工知能">人工知能</button>
+								<button type="button" class="btn btn-warning btn-filter" data-target="機械学習">機械学習</button>
+								<button type="button" class="btn btn-danger btn-filter" data-target="深層学習">深層学習</button>
+            <!-- <p><h6>{{manachan_return['item']}}</h6></p> -->
+        </div>
+
+        <div class="col-lg-6">
+          <!-- <h4>Subheading</h4>
+          <p></p>
+
+          <h4>Subheading</h4>
+          <p></p> -->
+
+
+      </div>
+      <div>
+      <br/>
+      <footer class="footer">
+        <p>&copy; TakahashiKoji 2018</p>
+      </footer>
+
+    　</div> <!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bo
+
+
+
+
+<!-- <html>
+    <body>
+        あなたが検索した語句<br/>
+        {{passlog}}<br/>
+        <br/>
+        {{manachan_return['manachan_memo']}}<br/>
+        {{manachan_return['description']}}<br/>
+        <br/>
+        <form method="POST" action="/study">
+
+            {{manachan_return['important']}}<br/>
+            {{manachan_return['item']}}<br/>
+
+            <br/>
+            {{manachan_return['relation_word']}}<br/>
+            {{manachan_return['conti']}}<br/>
+            <br/>
+            あなたの調べたい言葉を入力してね。<br/>
+            どーぞ：{{ form.user() }}<input type="submit" value="送信"/><br/>
+        </form>
+
+        <br/>
+        {{manachan_return['database_word']}}<br/>
+        <a href={{manachan_return['URL1']}} target="_blank">{{manachan_return['URL1']}}</a><br/>
+        <a href={{manachan_return['URL2']}} target="_blank">{{manachan_return['URL2']}}</a><br/>
+        <br/>
+
+
+
+
+
+
+    </body>
+</html> -->
+
+
+<!-- <html>
+    <body>
+
+
+        <form method="POST" action="/study">
+          あなたが検索した語句<br/>
+          {{passlog}}<br/>
+            <br/>
+            重要語句<br/>
+            「 人工知能, 機械学習, 深層学習 」<br/>
+            <br/>
+            あなたが調べたい言葉を入力してね。<br/>
+            <br/>
+            どーぞ：{{ form.user() }}<input type="submit" value="送信"/><br/>
+        </form>
+
+        {{manachan_return['unknown']}}<br/> -->
+        <!-- {{manachan_return['manachan_memo']}}<br/>
+        {{manachan_return['description']}}<br/>
+        <br/>
+        {{manachan_return['database_word']}}<br/>
+        <a href={{manachan_return['URL1']}} target="_blank">{{manachan_return['URL1']}}</a><br/>
+        <a href={{manachan_return['URL2']}} target="_blank">{{manachan_return['URL2']}}</a><br/>
+        <br/>
+        {{manachan_return['relation_word']}}<br/>
+        {{manachan_return['conti']}}<br/> -->
+
+
+    <!-- </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Narrow Jumbotron Template for Bootstrap</title>
+
+    <link rel="stylesheet" href="https://getbootstrap.com/dist/css/bootstrap.min.css">
+    <link href="https://getbootstrap.com/docs/4.0/examples/narrow-jumbotron/narrow-jumbotron.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills float-right">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Map</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Manachan Study</h3>
+      </div>
+
+      <div class="jumbotron">
+        <h1>あなたが検索した語句</h1>
+        <h2>{{passlog}}</h2><br/>
+        <p class="lead"><h2>{{manachan_return['relation_word']}}</h2></p>
+        <p class="lead"><h2>{{manachan_return['conti']}}</h2></p>
+        <p class="lead">あなたが調べたい言葉を入力してね。</p>
+        <!-- <p class="lead">まずは重要語句から調べていくといいかも！</p> -->
+        <!-- <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p> -->
+          <form method="POST" action="/study" class="btn btn-lg btn-success">
+            <!-- あなたが検索した語句<br/> -->
+              <!-- <br/> -->
+              {{ form.user() }}<input type="submit" value="送信"/><br/>
+          </form>
+        </div>
+
+      <div class="row marketing">
+        <div class="col-lg-6">
+          <h4>{{manachan_return['database_word']}}</h4>
+          <p><a href={{manachan_return['URL1']}} target="_blank">{{manachan_return['URL1']}}</a></p>
+          <p><a href={{manachan_return['URL2']}} target="_blank">{{manachan_return['URL2']}}</a></p>
+
+          <h4>Manachan memo!!</h4>
+          <h4>{{manachan_return['description']}}<h4>
+
+            <h4>Important phrase</h4>
+            <p>{{manachan_return['item']}}</p>
+        </div>
+
+        <div class="col-lg-6">
+          <!-- <h4>Subheading</h4>
+          <p></p>
+
+          <h4>Subheading</h4>
+          <p></p> -->
+
+
+      </div>
+      <div>
+      <footer class="footer">
+        <p>&copy; Company 2017</p>
+      </footer>
+
+    　</div> <!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+  </body>
+</html>

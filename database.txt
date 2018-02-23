@@ -1,0 +1,68 @@
+{
+    
+"人工知能":{
+             "description":"映画とかで怖いイメージある〜！ターミネーターとか来たら怖いよ〜。",
+             "key":"人工知能",
+             "URL1":"https://www.ai-gakkai.or.jp/whatsai/AIwhats.html",
+             "URL2":"https://kotobank.jp/word/%E4%BA%BA%E5%B7%A5%E7%9F%A5%E8%83%BD-4702"
+},
+
+"機械の未来を予測した哲学者が警鐘を鳴らす理由":{
+             "description":"何？何が鳴らされているの？やっぱりタミネーターなの！？",
+             "key":"機械の未来を予測した哲学者が警鐘を鳴らす理由",
+             "URL1":"http://logmi.jp/67684",
+             "URL2":"https://www.gizmodo.jp/2015/01/post_16368.html"
+},
+
+"人工知能がこの世を救う４つの理由":{
+             "description":"人工知能って人類を救う救世主になるかもね！？",
+             "key":"人工知能がこの世を救う４つの理由",
+             "URL1":"http://journal.jp.fujitsu.com/2017/12/13/09/",
+             "URL2":"http://diamond.jp/articles/-/89136"
+},
+
+
+"機械学習":{
+      "description":"機械学習？？機械が学習するってどういうこと？ドラえもんなの？回帰？分類？何それ〜？",
+      "key":"機械学習",
+      "URL1":"https://qiita.com/AwaJ/items/950953a9c20f391e72cf",
+      "URL2":"http://jp.techcrunch.com/2016/10/28/20161023wtf-is-machine-learning/"
+},
+
+"機械学習の各手法":{
+      "description":"一口に機械学習って言ってもいろんな方法があるんだね〜。びっくり！",
+      "key":"機械学習の各手法",
+      "URL1":"https://qiita.com/AwaJ/items/950953a9c20f391e72cf",
+      "URL2":"http://jp.techcrunch.com/2016/10/28/20161023wtf-is-machine-learning/"
+},
+
+"機械学習チートシート":{
+      "description":"あ、カンニングだ〜！カンニング竹山だ〜！！",
+      "key":"機械学習チートシート",
+      "URL1":"https://qiita.com/sugulu/items/e3fc39f2e552f2355209",
+      "URL2":"https://qiita.com/SE96UoC5AfUt7uY/items/e9521e8b87be45318a04"
+},
+
+    
+"深層学習":{
+      "description":"知ってる！話題のディープラーニングとかを深層学習っていうのよね！",
+      "key":"深層学習",
+      "URL1":"https://clonos.jp/knowledge/detail09/",
+      "URL2":"https://stores.saison.co.jp/blog/11"
+},
+
+"深層学習の各手法":{
+      "description":"機械学習だけじゃなくて深層学習にもたくさん手法があるんだ。。。覚えられるかなぁ？",
+      "key":"深層学習の各手法",
+      "URL1":"http://gagbot.net/machine-learning/ml4",
+      "URL2":"https://jp.mathworks.com/discovery/deep-learning.html"
+},
+
+"深層学習ライブラリ":{
+      "description":"便利なライブラリがあるなら少しは簡単になるかも！？",
+      "key":"深層学習ライブラリ",
+      "URL1":"https://qiita.com/jintaka1989/items/bfcf9cc9b0c2f597d419",
+      "URL2":"https://qiita.com/Ted-HM/items/298116d03cbb9b3477e6"
+}
+ 
+} 
